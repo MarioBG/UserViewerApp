@@ -258,11 +258,11 @@
             <div>Badges</div>
           </a>
         </li>*@
-        <li class='menu-item@(currentPage == "/Ui/Buttons" ? " active" : "")'>
+        @*<li class='menu-item@(currentPage == "/Ui/Buttons" ? " active" : "")'>
           <a asp-controller="Ui" asp-action="Buttons" class="menu-link">
             <div>Buttons</div>
           </a>
-        </li>
+        </li>*@
         @*<li class='menu-item@(currentPage == "/Ui/Carousel" ? " active" : "")'>
           <a asp-controller="Ui" asp-action="Carousel" class="menu-link">
             <div>Carousel</div>
@@ -370,7 +370,7 @@
     </li>*@
 
     <!-- Forms & Tables -->
-    <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li>
+    @*<li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li>*@
     <!-- Forms -->
     @*<li class='menu-item@(currentPage.StartsWith("/Forms") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -396,12 +396,12 @@
         <div>Form Layouts</div>
       </a>
       <ul class="menu-sub">
-        *@<li class='menu-item@(currentPage == "/FormLayouts/Vertical" ? " active" : "")'>
+        <li class='menu-item@(currentPage == "/FormLayouts/Vertical" ? " active" : "")'>
           <a asp-controller="FormLayouts" asp-action="Vertical" class="menu-link">
             <div>Vertical Form</div>
           </a>
         </li>
-        @*<li class='menu-item@(currentPage == "/FormLayouts/Horizontal" ? " active" : "")'>
+        <li class='menu-item@(currentPage == "/FormLayouts/Horizontal" ? " active" : "")'>
           <a asp-controller="FormLayouts" asp-action="Horizontal" class="menu-link">
             <div>Horizontal Form</div>
           </a>
@@ -416,12 +416,12 @@
       </a>
     </li>*@
     <!-- Tables -->
-    <li class='menu-item@(currentPage == "/Tables/Basic" ? " active" : "")'>
+    @*<li class='menu-item@(currentPage == "/Tables/Basic" ? " active" : "")'>
       <a asp-controller="Tables" asp-action="Basic" class="menu-link">
         <i class="menu-icon tf-icons bx bx-table"></i>
         <div>Tables</div>
       </a>
-    </li>
+    </li>*@
     <!-- Data Tables -->
     @*<li class='menu-item@(currentPage == "/Tables/DataTablesBasic" ? " active" : "")'>
       <a href="https://demos.themeselection.com/sneat-aspnet-core-mvc-admin-template/html/vertical-menu-template/tables-datatables-basic.html" target="_blank" class="menu-link">
