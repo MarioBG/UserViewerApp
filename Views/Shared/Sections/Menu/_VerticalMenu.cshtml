@@ -31,20 +31,20 @@
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
         <div>Dashboards</div>
-        <div class="badge bg-danger rounded-pill ms-auto">5</div>
+        <div class="badge bg-danger rounded-pill ms-auto">1</div>
       </a>
       <ul class="menu-sub">
-        <li class='menu-item@(currentPage == "/Dashboards/CRM" ? " active" : "")'>
+        @*<li class='menu-item@(currentPage == "/Dashboards/CRM" ? " active" : "")'>
           <a href="https://demos.themeselection.com/sneat-aspnet-core-mvc-admin-template/html/vertical-menu-template/dashboards-crm.html" target="_blank" class="menu-link">
             <div>CRM</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
           </a>
-        </li>
+        </li>*@
         <li class='menu-item@(currentPage == "/" ? " active" : "")'>
           <a asp-controller="Dashboards" asp-action="Index" class="menu-link">
-            <div>Analytics</div>
+            <div>User management</div>
           </a>
         </li>
-        <li class='menu-item@(currentPage == "/Ecommerce/Dashboard" ? " active" : "")'>
+        @*<li class='menu-item@(currentPage == "/Ecommerce/Dashboard" ? " active" : "")'>
           <a href="https://demos.themeselection.com/sneat-aspnet-core-mvc-admin-template/html/vertical-menu-template/app-ecommerce-dashboard.html" target="_blank" class="menu-link">
             <div>eCommerce</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
           </a>
@@ -58,12 +58,12 @@
           <a href="https://demos.themeselection.com/sneat-aspnet-core-mvc-admin-template/html/vertical-menu-template/app-academy-dashboard.html" target="_blank" class="menu-link">
             <div>Academy</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
           </a>
-        </li>
+        </li>*@
       </ul>
     </li>
 
     <!-- Layouts -->
-    <li class='menu-item@(currentPage.StartsWith("/LayoutExamples") ? " active open" : "")'>
+    @*<li class='menu-item@(currentPage.StartsWith("/LayoutExamples") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-layout"></i>
         <div>Layouts</div>
@@ -97,10 +97,10 @@
           </a>
         </li>
       </ul>
-    </li>
+    </li>*@
 
     <!-- Front Pages -->
-    <li class='menu-item@(currentPage.StartsWith("/FrontPages") ? " active open" : "")'>
+    @*<li class='menu-item@(currentPage.StartsWith("/FrontPages") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-store"></i>
         <div>Front Pages</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
@@ -132,13 +132,13 @@
           </a>
         </li>
       </ul>
-    </li>
+    </li>*@
     <!-- Apps & Pages -->
-    <li class="menu-header small text-uppercase">
+    @*<li class="menu-header small text-uppercase">
       <span class="menu-header-text">Apps &amp; Pages</span>
-    </li>
+    </li>*@
     <!-- Apps -->
-    <li class='menu-item@(currentPage == "/Apps/Email" ? " active" : "")'>
+    @*<li class='menu-item@(currentPage == "/Apps/Email" ? " active" : "")'>
       <a href="https://demos.themeselection.com/sneat-aspnet-core-mvc-admin-template/html/vertical-menu-template/app-email.html" target="_blank" class="menu-link">
         <i class="menu-icon tf-icons bx bx-envelope"></i>
         <div>Email</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
@@ -161,9 +161,9 @@
         <i class="menu-icon tf-icons bx bx-grid"></i>
         <div>Kanban</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
       </a>
-    </li>
+    </li>*@
     <!-- Pages -->
-    <li class='menu-item@(currentPage.StartsWith("/Pages/Account") ? " active open" : "")'>
+    @*<li class='menu-item@(currentPage.StartsWith("/Pages/Account") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-dock-top"></i>
         <div>Account Settings</div>
@@ -226,18 +226,18 @@
           </a>
         </li>
       </ul>
-    </li>
+    </li>*@
     <!-- Components -->
-    <li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li>
+    @*<li class="menu-header small text-uppercase"><span class="menu-header-text">Components</span></li>*@
     <!-- Cards -->
-    <li class='menu-item@(currentPage == "/Cards/Basic" ? " active" : "")'>
+    @*<li class='menu-item@(currentPage == "/Cards/Basic" ? " active" : "")'>
       <a asp-controller="Cards" asp-action="Basic" class="menu-link">
         <i class="menu-icon tf-icons bx bx-collection"></i>
         <div>Cards</div>
       </a>
-    </li>
+    </li>*@
     <!-- User interface -->
-    <li class='menu-item@(currentPage.StartsWith("/Ui") ? " active open" : "")'>
+    @*<li class='menu-item@(currentPage.StartsWith("/Ui") ? " active open" : "")'>
       <a href="javascript:void(0)" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-box"></i>
         <div>User interface</div>
@@ -257,13 +257,13 @@
           <a asp-controller="Ui" asp-action="Badges" class="menu-link">
             <div>Badges</div>
           </a>
-        </li>
+        </li>*@
         <li class='menu-item@(currentPage == "/Ui/Buttons" ? " active" : "")'>
           <a asp-controller="Ui" asp-action="Buttons" class="menu-link">
             <div>Buttons</div>
           </a>
         </li>
-        <li class='menu-item@(currentPage == "/Ui/Carousel" ? " active" : "")'>
+        @*<li class='menu-item@(currentPage == "/Ui/Carousel" ? " active" : "")'>
           <a asp-controller="Ui" asp-action="Carousel" class="menu-link">
             <div>Carousel</div>
           </a>
@@ -339,10 +339,10 @@
           </a>
         </li>
       </ul>
-    </li>
+    </li>*@
 
     <!-- Extended components -->
-    <li class='menu-item@(currentPage.StartsWith("/ExtendedUi") ? " active open" : "")'>
+    @*<li class='menu-item@(currentPage.StartsWith("/ExtendedUi") ? " active open" : "")'>
       <a href="javascript:void(0)" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-copy"></i>
         <div>Extended UI</div>
@@ -359,20 +359,20 @@
           </a>
         </li>
       </ul>
-    </li>
+    </li>*@
 
     <!-- Icons -->
-    <li class='menu-item@(currentPage == "/Icons/Boxicons" ? " active" : "")'>
+    @*<li class='menu-item@(currentPage == "/Icons/Boxicons" ? " active" : "")'>
       <a asp-controller="Icons" asp-action="Boxicons" class="menu-link">
         <i class="menu-icon tf-icons bx bx-crown"></i>
         <div>Boxicons</div>
       </a>
-    </li>
+    </li>*@
 
     <!-- Forms & Tables -->
     <li class="menu-header small text-uppercase"><span class="menu-header-text">Forms &amp; Tables</span></li>
     <!-- Forms -->
-    <li class='menu-item@(currentPage.StartsWith("/Forms") ? " active open" : "")'>
+    @*<li class='menu-item@(currentPage.StartsWith("/Forms") ? " active open" : "")'>
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-detail"></i>
         <div>Form Elements</div>
@@ -396,25 +396,25 @@
         <div>Form Layouts</div>
       </a>
       <ul class="menu-sub">
-        <li class='menu-item@(currentPage == "/FormLayouts/Vertical" ? " active" : "")'>
+        *@<li class='menu-item@(currentPage == "/FormLayouts/Vertical" ? " active" : "")'>
           <a asp-controller="FormLayouts" asp-action="Vertical" class="menu-link">
             <div>Vertical Form</div>
           </a>
         </li>
-        <li class='menu-item@(currentPage == "/FormLayouts/Horizontal" ? " active" : "")'>
+        @*<li class='menu-item@(currentPage == "/FormLayouts/Horizontal" ? " active" : "")'>
           <a asp-controller="FormLayouts" asp-action="Horizontal" class="menu-link">
             <div>Horizontal Form</div>
           </a>
         </li>
       </ul>
-    </li>
+    </li>*@
     <!-- Form Validation -->
-    <li class='menu-item@(currentPage == "/FormValidation/Validation" ? " active" : "")'>
+    @*<li class='menu-item@(currentPage == "/FormValidation/Validation" ? " active" : "")'>
       <a href="https://demos.themeselection.com/sneat-aspnet-core-mvc-admin-template/html/vertical-menu-template/form-validation.html" target="_blank" class="menu-link">
         <i class="menu-icon tf-icons bx bx-list-check"></i>
         <div>Form Validation</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
       </a>
-    </li>
+    </li>*@
     <!-- Tables -->
     <li class='menu-item@(currentPage == "/Tables/Basic" ? " active" : "")'>
       <a asp-controller="Tables" asp-action="Basic" class="menu-link">
@@ -423,14 +423,14 @@
       </a>
     </li>
     <!-- Data Tables -->
-    <li class='menu-item@(currentPage == "/Tables/DataTablesBasic" ? " active" : "")'>
+    @*<li class='menu-item@(currentPage == "/Tables/DataTablesBasic" ? " active" : "")'>
       <a href="https://demos.themeselection.com/sneat-aspnet-core-mvc-admin-template/html/vertical-menu-template/tables-datatables-basic.html" target="_blank" class="menu-link">
         <i class="menu-icon tf-icons bx bx-grid"></i>
         <div>Datatables</div><div class="badge bg-label-primary fs-tiny rounded-pill ms-auto">Pro</div>
       </a>
-    </li>
+    </li>*@
     <!-- Misc -->
-    <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
+    @*<li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
     <li class="menu-item">
       <a href='@TempData.Peek("support")' target="_blank" class="menu-link">
         <i class="menu-icon tf-icons bx bx-support"></i>
@@ -442,7 +442,7 @@
         <i class="menu-icon tf-icons bx bx-file"></i>
         <div>Documentation</div>
       </a>
-    </li>
+    </li>*@
   </ul>
 
 </aside>

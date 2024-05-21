@@ -1,8 +1,14 @@
+using AspnetCoreMvcFull;
+using AspnetCoreMvcFull.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 // Add services to the container.
+
+builder.Services.AddDbContext<ApplicationDbContext>();
+builder.Services.AddScoped<UserService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
